@@ -1,0 +1,19 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Simple Game</h1>
+    </div>
+  </div>
+  <hr>
+  <app-game-control (counterUpdated)="onCounterUpdated($event)"></app-game-control>
+  <br>
+  <ul class="list-group">
+    <li *ngFor="let cL of counterLog" class="list-group-item">
+      <app-odd *ngIf="cL % 2 != 0; else elseBlock" [oddNumber]="cL"></app-odd>
+      <ng-template #elseBlock>
+        <app-even [evenNumber]="cL"></app-even>
+      </ng-template>
+    </li>
+  </ul>
+</div>

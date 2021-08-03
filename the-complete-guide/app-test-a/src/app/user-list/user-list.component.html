@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <app-user *ngFor="let u of users" [user]="u"></app-user>
+</ul>
+<hr>
+<app-user-edit (userAdded)="onUserAdded($event)"></app-user-edit>

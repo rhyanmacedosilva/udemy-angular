@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-floating">
+            <input 
+                [(ngModel)]="userName" 
+                type="text" 
+                class="form-control" 
+                id="username" 
+                placeholder="Username">
+            <label for="username">Username</label>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-floating">
+            <select 
+                [(ngModel)]="userLevel" 
+                class="form-select" 
+                id="user-level" 
+                aria-label="Level">
+                <option value="Default">Default</option>
+                <option value="Admin">Admin</option>
+            </select>
+            <label for="user-level">Level</label>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-12">
+        <button [disabled]="!userIsValid()" (click)="onAddUser()" class="btn btn-success">Add User</button>
+    </div>
+</div>

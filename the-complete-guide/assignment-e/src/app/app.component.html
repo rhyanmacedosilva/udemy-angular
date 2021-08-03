@@ -1,0 +1,32 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Control Panel - User Status</h1>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Active Users</h2>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <app-active-users *ngFor="let u of activeUsers" [user]="u"></app-active-users>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Inactive Users</h2>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4">
+      <app-inactive-users *ngFor="let u of inactiveUsers" [user]="u"></app-inactive-users>
+    </div>
+  </div>
+</div>
