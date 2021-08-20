@@ -4,4 +4,4 @@ Repositório criado para armazenar os projetos desenvolvidos durante a realizaç
 
 # Angular - The Complete Guide
 
-Clique [aqui](https://www.udemy.com/course/the-complete-guide-to-angular-2/) acessar a Udemy e obter informações complementares a respeito do curso.
+Clique [aqui](https://www.udemy.com/course/the-complete-guide-to-angular-2/) para acessar a Udemy e obter informações complementares a respeito do curso.
