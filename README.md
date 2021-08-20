@@ -8,7 +8,7 @@ Clique [aqui](https://www.udemy.com/course/the-complete-guide-to-angular-2/) ace
 
 ## Projetos Desenvolvidos no Decorrer do Curso
 
-Durante o curso foram desenvolvidos os projetos listados abaixo:
+Durante o curso foram desenvolvidos os projetos listados abaixo.
 
 Projeto                 | Detalhamento
 ------------------------|--------------------------------------------------------------------------------------------------------------------------------------------
