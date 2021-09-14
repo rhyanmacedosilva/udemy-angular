@@ -4,15 +4,24 @@
       <a href="#" class="navbar-brand">Recipe Book</a>
     </div>
     <ul class="nav navbar-nav">
-      <!-- <li><a href="#" (click)="onSelect('recipe')">Recipes</a></li>
-      <li><a href="#" (click)="onSelect('shopping-list')">Shopping List</a></li> -->
-      <li routerLinkActive="active"><a [routerLink]="['/auth']">Authentication</a></li>
-      <li routerLinkActive="active"><a [routerLink]="['/recipes']">Recipes</a></li>
-      <li routerLinkActive="active"><a [routerLink]="['/shopping-list']">Shopping List</a></li>
-      <!-- <li><a href="#">Save Data</a></li>
-      <li><a href="#">Fetch Data</a></li> -->
-      <li><a (click)="onSaveData()" style="cursor: pointer;">Save Data</a></li>
-      <li><a (click)="onFetchData()" style="cursor: pointer;">Fetch Data</a></li>
+      <li *ngIf="isAuthenticated == false" routerLinkActive="active">
+        <a [routerLink]="['/auth']">Authentication</a>
+      </li>
+      <li *ngIf="isAuthenticated == true" routerLinkActive="active">
+        <a [routerLink]="['/recipes']">Recipes</a>
+      </li>
+      <li routerLinkActive="active">
+        <a [routerLink]="['/shopping-list']">Shopping List</a>
+      </li>
+      <li *ngIf="isAuthenticated == true">
+        <a (click)="onSaveData()" style="cursor: pointer;">Save Data</a>
+      </li>
+      <li *ngIf="isAuthenticated == true">
+        <a (click)="onFetchData()" style="cursor: pointer;">Fetch Data</a>
+      </li>
+      <li *ngIf="isAuthenticated == true">
+        <a style="cursor: pointer;">Logout</a>
+      </li>
     </ul>
   </div>
 </nav>
